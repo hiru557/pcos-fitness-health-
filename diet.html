@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Plan - PCOS Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<header>PCOS Fitness & Health</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="progress.html">Progress</a>
+  <a href="diet.html">Diet Plan</a>
+  <a href="workout.html">Workout</a>
+  <a href="chatbot.html">AI Chatbot</a>
+</nav>
+
+<div class="container">
+  <h1>Create Your Diet Plan</h1>
+
+  <div class="card">
+    <label>Select Your Goal</label>
+    <select id="goal">
+      <option value="normal">General Health</option>
+      <option value="weightloss">Weight Loss</option>
+      <option value="muscle">Muscle Gain</option>
+    </select>
+
+    <button onclick="generatePlan()">Generate Diet Plan</button>
+  </div>
+
+  <div class="card">
+    <h2>Your Diet Plan</h2>
+    <pre id="diet-output"></pre>
+  </div>
+</div>
+
+<div class="footer">© 2025 PCOS Fitness & Health</div>
+
+</body>
+</html>
