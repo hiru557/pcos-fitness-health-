@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot - PCOS Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <style>
+    .chat-wrapper {
+      max-width: 700px;
+      margin: auto;
+      padding: 10px;
+    }
+    #chat-box {
+      height: 380px;
+      overflow-y: auto;
+      background: #f4eaff;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid #d8c8f5;
+    }
+    #chat-input {
+      width: 100%;
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #c7b7df;
+    }
+  </style>
+</head>
+<body>
+
+<header>PCOS Fitness & Health</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="progress.html">Progress</a>
+  <a href="diet.html">Diet Plan</a>
+  <a href="workout.html">Workout</a>
+  <a href="chatbot.html">AI Chatbot</a>
+</nav>
+
+<div class="container">
+  <h1>AI Assistance for PCOS</h1>
+
+  <div class="chat-wrapper">
+    <div id="chat-box"></div>
+    <input id="chat-input" placeholder="Ask anything about PCOS, diet, workout..." onkeydown="if(event.key==='Enter') sendMessage()">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<div class="footer">© 2025 PCOS Fitness & Health</div>
+
+</body>
+</html>
